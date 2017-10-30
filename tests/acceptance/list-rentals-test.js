@@ -26,8 +26,6 @@ test('should link to contact information.', function (assert) {
   });
 });
 
-test('should list available rentals.', function (assert) {
-});
 
 test('should filter the list of rentals by city.', function (assert) {
   visit('/');
@@ -37,9 +35,6 @@ test('should filter the list of rentals by city.', function (assert) {
     assert.equal(find('.listing').length, 1, 'should show 1 listing');
     assert.equal(find('.listing .location:contains("Seattle")').length, 1, 'should contain 1 listing with location Seattle');
   });
-});
-
-test('should show details for a selected rental', function (assert) {
 });
 
 test('visiting ', function(assert) {
